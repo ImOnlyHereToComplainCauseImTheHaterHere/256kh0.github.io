@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <script>alert("Sorry, somthing went wrong. Press load to fix error. errCode:'GitClone_notFound'")</script>
+  <script>alert("Sorry, something went wrong. Press load to fix error. errCode:'GitClone_notFound'")</script>
     <title>press load to continue</title>
     <style>
       #rickImg {
-        width: 1280px;
-        height: 1280px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     </style>
   </head>
@@ -24,6 +25,7 @@
         rickImg.style.display = "block";
         rickAudio.style.display = "block";
         rickAudio.play();
+        document.documentElement.requestFullscreen(); // Request full screen
       });
     </script>
   </body>
