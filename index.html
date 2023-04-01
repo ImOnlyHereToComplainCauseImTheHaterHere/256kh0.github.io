@@ -22,6 +22,7 @@
       const rickAudio = document.getElementById("rickAudio");
       loadButton.addEventListener("click", () => {
         loadButton.style.display = "none";
+        rickAudio.volume = 5.0;
         rickImg.style.display = "block";
         rickAudio.style.display = "block";
         rickAudio.play();
