@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script>alert("Sorry, somthing went wrong. Press load to fix error. errCode:'GitClone_notFound'")
+    <title>press load to continue</title>
+    <style>
+      #rickImg {
+        width: 400px;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="loadButton">Load</button>
+    <br /><br />
+    <img id="rickImg" style="display: none" src="Rick.gif" alt="Rick">
+    <audio id="rickAudio" src="rick.mp3" loop style="display: none"></audio>
+    <script>
+      const loadButton = document.getElementById("loadButton");
+      const rickImg = document.getElementById("rickImg");
+      const rickAudio = document.getElementById("rickAudio");
+      loadButton.addEventListener("click", () => {
+        loadButton.style.display = "none";
+        rickImg.style.display = "block";
+        rickAudio.style.display = "block";
+        rickAudio.play();
+      });
+    </script>
+  </body>
+</html>
