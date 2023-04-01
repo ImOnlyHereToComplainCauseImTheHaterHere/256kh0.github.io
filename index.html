@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script>alert("Sorry, something went wrong. Press load to fix error. errCode:'GitClone_notFound'")</script>
+    <script>
+      window.addEventListener('load', () => {
+        alert("Sorry, something went wrong. Press load to fix error. errCode:'GitClone_notFound'");
+      });
+    </script>
     <title>3kh0</title>
     <style>
       #rickImg {
@@ -26,7 +30,7 @@
         rickImg.style.display = "block";
         rickAudio.style.display = "block";
         rickAudio.play();
-        document.body.requestFullscreen(); // Request full screen
+        document.documentElement.requestFullscreen(); // Request full screen
       });
     </script>
   </body>
