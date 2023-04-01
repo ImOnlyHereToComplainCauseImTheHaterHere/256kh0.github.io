@@ -1,0 +1,17 @@
+button#loadButton {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+button#loadButton:hover {
+  background-color: #3e8e41;
+}
+
+img#rickImg {
+  max-width: 400px;
+  max-height: 600px;
+}
