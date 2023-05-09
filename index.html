@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<script>
-  function rick():
-    <img id="rickImg" style="display: true" src="rick.gif" alt="Rick">
-    <audio id="rickAudio" src="rick.mp3" loop style="display: none"></audio>
-  </script>
 <html>
   <head>
     <link rel="icon" type="image/png" href="3k.png">
@@ -19,8 +14,10 @@
   </head>
   <body>
     <script>alert("Sorry, something went wrong. Press load to fix error. errCode:'GitClone_notFound'")</script>
-    <button oncllick="rick()", id="loadButton">Load</button>
+    <button id="loadButton">Load</button>
     <br /><br />
+    <img id="rickImg" style="display:none" src="rick.gif" alt="Rick">
+    <audio id="rickAudio" src="rick.mp3" loop style="display: none"></audio>
     <script>
       const loadButton = document.getElementById("loadButton");
       const rickImg = document.getElementById("rickImg");
