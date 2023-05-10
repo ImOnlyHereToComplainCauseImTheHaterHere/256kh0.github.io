@@ -18,15 +18,10 @@
     <img id="rickImg" style="display:none" src="rick.gif" alt="Rick">
     <audio id="rickAudio" src="rick.mp3" loop style="display: none"></audio>
     <script>
-      const loadButton = document.getElementById("loadButton");
-      const rickImg = document.getElementById("rickImg");
-      const rickAudio = document.getElementById("rickAudio");
-      loadButton.addEventListener("click", () => {
-        loadButton.style.display = "none";
-        rickAudio.volume = 5.0;
-        rickImg.style.display = "true";
-        rickAudio.style.display = "block";
-        rickAudio.play();
+      const load = document.getElementById("loadButton");
+      const ric = document.getElementById("rickImg"); 
+      showImageButton.addEventListener("click", () => { 
+         ric.style.display = "block"; 
       });
     </script>
   </body>
