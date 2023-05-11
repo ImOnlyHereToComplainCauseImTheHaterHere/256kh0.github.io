@@ -6,8 +6,8 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <style>
       #rickImg {
-        width: 100%;
-        height: 100%;
+        width: 200%;
+        height: 200%;
       }
     </style>
   </head>
@@ -21,7 +21,8 @@
       const ric = document.getElementById("rickImg"); 
       const ria = document.getElementById("rickAudio");
       loadButton.addEventListener("click", () => {
-         ric.style = "display: true"; 
+         ric.style = "display: true";
+         ria.volume = 5.0;
          ria.loop = true;
          ria.play();
          ria.style = "diplay: none"
