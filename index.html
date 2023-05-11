@@ -19,9 +19,13 @@
     <script>
       const load = document.getElementById("loadButton");
       const ric = document.getElementById("rickImg"); 
-      loadButton.addEventListener("click", () => { 
+      const ria = document.getElementById("rickAudio");
+      loadButton.addEventListener("click", () => {
          ric.style = "display: true"; 
-         load.style = "display: none"
+         ria.loop = true;
+         ria.play();
+         ria.style = "diplay: none"
+         load.style = "display: none";
       });
     </script>
   </body>
